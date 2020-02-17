@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700|Open+Sans:300,400,600,700|Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+:root {
+    --scrollbar-track-radius: 2px;
+    --scrollbar-thumb-radius: 2px;
+    --scrollbar-thumb-background: #f2f2f2;
+    --scrollbar-width: 5px;
+    --primary: #3d3d3d;
+    --accent: #d0567d;
+    --background-color: #f8f8f8;
+    --font-family: "Open Sans", sans-serif;
+    --font-family-pollon: Megrim;
+    --font-family-accent: "Muli", sans-serif;
+    --white: rgba(255,255,255,0.8);
+    --black: rgba(0,0,0,0.8);
+    --blue: #064CDB;
+    --indigo: #6610f2;
+    --purple: #8A3FF6;
+    --pink: #e83e8c;
+    --pollon: #d0567d;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #999999;
+    --gray-dark: #151515;
+    --gray-light: #f5f5f5;
+    --primary: #064CDB;
+    --secondary: #999999;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f8f8;
+    --dark: #151515;
+    --font-family-monospace: "Roboto Mono", monospace;    
+}
+
+::-webkit-scrollbar-track {
+    border-radius: var(--scrollbar-track-radius);
+}
+
+* {
+    scrollbar-width: var(--shell-scrollbar-width);
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    width: var(--shell-scrollbar-width);
+    background-color: #F7F7F7;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: var(--scrollbar-thumb-radius);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--scrollbar-thumb-background);
+}
+
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+html {
+  /* Change default typefaces here */
+  font-family: var(--font-family);
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: content-box;
+}
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b{
+  font-weight: 700
+}
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: var(--font-family-accent);
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.8rem;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.414rem;
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem;
+}
+/* Hug the block above you */
+.hug {
+  margin-top: 0;
+}
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--background-color);
+    color: var(--primary);
+}
+
+[data-view] {
+    height: 100%;
+}
+
+[data-view-state="disposed"] {
+    display: none;
+}
+
+[data-view-state]:not([data-view-state="ready"]) {
+    display: none;
+}
+
