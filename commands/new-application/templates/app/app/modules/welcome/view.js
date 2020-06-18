@@ -1,8 +1,8 @@
 import { Application } from '@pollon/pollon'
 
-export class HomeView {
+export class WelcomeView {
     constructor( module ){
-        this.template = '@home/template.jpt'
+        this.template = '@welcome/template.jpt'
         this.Module = module
     }
 

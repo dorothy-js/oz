@@ -8,9 +8,9 @@ export const routes = [
         }
     },
     {
-        name: 'home',
+        name: 'welcome',
         pattern: '',
-        module: '@home/module',
+        module: '@welcome/module',
         injection: {
             point: '[pollon-app]'
         }

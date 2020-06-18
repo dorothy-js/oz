@@ -55,6 +55,7 @@ const buildWatcher = function( cwd ){
         
         let message = firstTime ? chalk.yellowBright('Listening for changes... ( CRL+C to stop )') : chalk.yellowBright('Changes detected. Rebuilding...')
         
+        console.log('\n')
         console.log(message)
         let command = 'app --out-dir dist --plugins=@babel/plugin-transform-modules-systemjs --source-maps --copy-files'
         await exec('babel', command.split(' '), { cwd })

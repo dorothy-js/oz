@@ -7,7 +7,7 @@
         "@application/": "/",
         "@modules/": "/modules/",
         "@404/": "/modules/404/",
-        "@home/": "/modules/home/"
+        "@welcome/": "/modules/welcome/"
     },
     "bundles": {
 

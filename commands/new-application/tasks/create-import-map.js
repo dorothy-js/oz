@@ -12,7 +12,7 @@ const getImportMap = function ({ pollonPackages, loader, bundler }) {
             })),
             {
                 'knockout': './node_modules/knockout/build/output/knockout-latest.debug.js',
-                'komapping': '#url:https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js'
+                'komapping': 'https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js'
             }
         ].reduce((a, b) => Object.assign(a, b), {})
     }
@@ -20,7 +20,7 @@ const getImportMap = function ({ pollonPackages, loader, bundler }) {
 
 module.exports = async function ({ name, npm, registry, cwd, pollonPackages, loader, bundler }) {
     let bar = new ProgressBar.Bar({
-        format: chalk.cyan('{bar}: ') + chalk.magentaBright(`${name} | Creating import maps`),
+        format: chalk.cyan('{bar}: ') + chalk.magentaBright(`${name} | Creating import map`),
         barCompleteChar: '\u2588',
         barIncompleteChar: '\u2591',
         hideCursor: true

@@ -32,7 +32,10 @@ module.exports = async function ({ name, npm, registry, git, host, package, load
 
     process.chdir(cwd)
 
+    console.log('\n')
+
     await createImportMap({ name, npm, registry, cwd, pollonPackages, loader, bundler })
     await npmInstall({ name, npm, registry, cwd, pollonPackages, loader, bundler })
+    
     console.log('\n')
 }
