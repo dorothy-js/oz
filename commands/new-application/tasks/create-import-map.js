@@ -12,7 +12,7 @@ const getImportMap = function ({ pollonPackages, loader, bundler }) {
             })),
             {
                 'knockout': './node_modules/knockout/build/output/knockout-latest.debug.js',
-                'komapping': '#url:https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js'
+                'komapping': 'https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js'
             }
         ].reduce((a, b) => Object.assign(a, b), {})
     }
