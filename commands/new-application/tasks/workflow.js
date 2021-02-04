@@ -14,7 +14,7 @@ const pollonPackages = [
     '@pollon/juice-lang',
     '@pollon/knockout',
     '@pollon/system-js',
-    '@pollon/decorators'
+//    '@pollon/decorators'
 ]
 
 module.exports = async function ({ name, npm, registry, git, host, package, loader, bundler }){
