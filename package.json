@@ -1,6 +1,6 @@
 {
   "name": "@pollon/cli",
-  "version": "0.0.1",
+  "version": "0.0.1a",
   "description": "Command Line Interface for the Pollon framework",
   "bin": {
     "pollon": "bin/cli"
